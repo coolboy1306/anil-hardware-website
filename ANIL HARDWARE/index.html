@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ANIL HARDWARE - Quality You Trust</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#home" class="logo-container" aria-label="Go to home section">
+      <!-- Placeholder SVG logo, replace the src with your logo path -->
+      <img src="img/logo.png" alt="ANIL HARDWARE Logo" />
+      <div class="logo-text">ANIL HARDWARE</div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active" style="font-family: 'Times New Roman', Times, serif;">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#brands">Brands</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="dropdown">
+      <button class="dropdown-toggle" aria-label="Open menu" onclick="toggleDropdown()">&#9776;</button>
+      <div class="dropdown-menu" id="dropdownMenu" role="menu" aria-hidden="true">
+        <a href="#home" role="menuitem" onclick="closeDropdown()">Home</a>
+        <a href="#about-us" role="menuitem" onclick="closeDropdown()">About Us</a>
+        <a href="#products" role="menuitem" onclick="closeDropdown()">Products</a>
+        <a href="#brands" role="menuitem" onclick="closeDropdown()">Brands</a>
+        <a href="#contact" role="menuitem" onclick="closeDropdown()">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Enquiry button -->
+  <button class="enquiry-button" aria-haspopup="dialog" aria-controls="enquiryModal" onclick="openEnquiry()">Enquiry Now</button>
+
+  <!-- Enquiry modal -->
+  <div id="enquiryModal" class="modal" aria-hidden="true" aria-labelledby="enquiryTitle" role="dialog">
+    <div class="modal-content">
+      <span class="close" role="button" aria-label="Close enquiry form" onclick="closeEnquiry()">&times;</span>
+      <h2 id="enquiryTitle">Send Enquiry</h2>
+      <form onsubmit="return handleSubmit(event)">
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+        <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required />
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sections -->
+  <section id="home" data-aos="fade-up" aria-label="Home section">
+    <h2 class="section-title" style="font-family: 'Times New Roman', Times, serif;">Welcome to ANIL HARDWARE</h2>
+    <p>Your trusted partner for top-quality hardware fittings and industrial supplies.</p>
+  </section>
+
+  <section id="about-us" data-aos="fade-up" aria-label="About Us section">
+    <h2 class="section-title" style="font-family: 'Times New Roman', Times, serif;">About Us</h2>
+    <p>ANIL HARDWARE is a reputed distributor and supplier of a wide range of brass fittings, valves, electrical accessories, PVC pipes, and much more.</p>
+    <p>We ensure quality products, timely delivery, and customer satisfaction as our top priorities.</p>
+  </section>
+
+  <section id="products" data-aos="fade-up" aria-label="Products section">
+    <h2 class="section-title" style="font-family: 'Times New Roman', Times, serif;">Our Products</h2>
+    <div class="product-grid">
+      <article class="product-card" tabindex="0">
+        <img src="img/gi pipe.png" alt="G.I Pipes" />
+        <h3>G.I Pipes</h3>
+        <p>High-quality G.I Pipes are available, Authorized dealer of Jindal MS pipes.</p>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="img/seamless pipe.png" alt="Seamless Pipe" />
+        <h3>M.S pipe</h3>
+        <p>High-quality G.I Pipes are available, Authorized dealer of Jindal MS pipes.</p>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="img/pngwing.com.png" alt="M.S Fittings" />
+        <h3>M.S Fittings</h3>
+        <p>All type of fittings are available (inch thread & MM thread).</p>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="img/nutand bolt.png" alt="M.S Nut and Bolt" />
+        <h3>M.S Nut and Bolt</h3>
+        <p>Wide range of nut and bolt are available.</p>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="img/flanges.png" alt="flanges" />
+        <h3>M.S And S.S Flanges</h3>
+        <p>Comprehensive range of flanges,Slip-on, weld neck, blind, lap joint, socket weld, and threaded flanges.</p>
+      </article>
+       <article class="product-card" tabindex="0">
+        <img src="img/washer_transparent.png" alt="washers" />
+        <h3>M.S Washer</h3>
+        <p>Wide range M.S Washer are available.</p>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="img/valves,.png" alt="valves" />
+        <h3>Valves</h3>
+        <p>Wide range M.S Washer are available.</p>
+      </article>
+         <article class="product-card" tabindex="0">
+        <img src="img/angle barws.png" alt="angles and bars" />
+        <h3>MS Channel, Angle, and Flat barr</h3>
+        <p>A variety of industrial applications.</p>
+      </article>
+         <article class="product-card" tabindex="0">
+        <img src="img/profilsheet.png" alt="profile sheets" />
+        <h3>profile sheet</h3>
+        <p>High quality sheets with wide rang.</p>
+      </article>
+      </article>
+         <article class="product-card" tabindex="0">
+        <img src="img/wires.png" alt="wires" />
+        <h3>MS & GI wires </h3>
+        <p>All size and rage of wires</p>
+      </article>
+      </article>
+         <article class="product-card" tabindex="0">
+        <img src="img/karammaker.png" alt="Safety Items (Karam make)." />
+        <h3>Safety Items (Karam make).</h3>
+        <p>High quality high quality of Safety items.</p>
+      </article>
+      </article>
+         <article class="product-card" tabindex="0">
+        <img src="img/ropes.png" alt="ropes" />
+        <h3>Ropes</h3>
+        <p>Various ropes, including Nylon and Jute.</p>
+      </article>
+        </article>
+         <article class="product-card" tabindex="0">
+        <img src="img/Tarpaulins & Plastic Sheets..png" alt="tarpaulins" />
+        <h3>Tarpaulins & Plastic Sheets</h3>
+        <p>Huge range of tarpaulins & Plastic sheets are instock.</p>
+      </article>
+        </article>
+         <article class="product-card" tabindex="0">
+        <img src="img/Fire acessories.png" alt="fire Accessories" />
+        <h3>Fire Accessories</h3>
+        <p>All types of fir Accessories are available.</p>
+      </article>
+    </div>
+  </section>
+
+ <section id="brands" data-aos="fade-up" aria-label="Brands section">
+  <h2 class="section-title" style="font-family: 'Times New Roman', Times, serif;">Brands partner</h2>
+  <div class="brands">
+    <div class="brands-inner">
+      <img src="img/astral pipes.png" alt="Brand 1" />
+      <img src="images/brand2.jpg" alt="Brand 2" />
+      <img src="images/brand3.jpg" alt="Brand 3" />
+      <img src="images/brand4.jpg" alt="Brand 4" />
+      <!-- Repeat images to create infinite loop -->
+      <img src="img/astral pipes.png" alt="Brand 1" />
+      <img src="images/brand2.jpg" alt="Brand 2" />
+      <img src="images/brand3.jpg" alt="Brand 3" />
+      <img src="images/brand4.jpg" alt="Brand 4" />
+    </div>
+  </div>
+</section>
+
+
+  <section id="contact" data-aos="fade-up" aria-label="Contact Us section">
+    <h2 class="section-title" style="font-family: 'Times New Roman', Times, serif;">Contact Us</h2>
+    <p><strong>Address:</strong> </p>
+    <p><strong>Phone:</strong> </p>
+    <p><strong>Email:</strong> Anilhardware101@gmail.com</p>
+    <a href="brouche/product.pdf.pdf" class="brochure-button" target="_blank" rel="noopener">Download Brochure</a>
+  </section>
+
+  <footer style="text-align:center; margin: 40px 0 20px; font-size: 0.9rem; color:#888;">
+    &copy; 2025 ANIL HARDWARE. All Rights Reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Dropdown toggle
+    function toggleDropdown() {
+      const menu = document.getElementById('dropdownMenu');
+      if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+        menu.setAttribute('aria-hidden', 'true');
+      } else {
+        menu.style.display = 'flex';
+        menu.setAttribute('aria-hidden', 'false');
+      }
+    }
+    function closeDropdown() {
+      const menu = document.getElementById('dropdownMenu');
+      menu.style.display = 'none';
+      menu.setAttribute('aria-hidden', 'true');
+    }
+
+    // Smooth scrolling + active nav highlighting
+    const links = document.querySelectorAll('nav ul li a, .dropdown-menu a');
+    links.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+          closeDropdown();
+          links.forEach(l => l.classList.remove('active'));
+          links.forEach(l => {
+            if (l.getAttribute('href') === '#' + targetId) {
+              l.classList.add('active');
+            }
+          });
+        }
+      });
+    });
+
+    // Highlight nav on scroll
+    window.addEventListener('scroll', () => {
+      let fromTop = window.scrollY + 100;
+      links.forEach(link => {
+        let section = document.querySelector(link.getAttribute('href'));
+        if (section) {
+          if (
+            section.offsetTop <= fromTop &&
+            section.offsetTop + section.offsetHeight > fromTop
+          ) {
+            links.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+          }
+        }
+      });
+    });
+
+    // Enquiry modal functions
+    const modal = document.getElementById('enquiryModal');
+    function openEnquiry() {
+      modal.style.display = 'block';
+      modal.setAttribute('aria-hidden', 'false');
+      document.getElementById('name').focus();
+    }
+    function closeEnquiry() {
+      modal.style.display = 'none';
+      modal.setAttribute('aria-hidden', 'true');
+    }
+    // Close modal on outside click
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        closeEnquiry();
+      }
+    };
+    // Close modal on Esc key
+    window.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && modal.style.display === 'block') {
+        closeEnquiry();
+      }
+    });
+
+    // Handle form submission
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('Thank you for your enquiry, ' + document.getElementById('name').value + '!');
+      closeEnquiry();
+      e.target.reset();
+      return false;
+    }
+  </script>
+
+</body>
+</html>
